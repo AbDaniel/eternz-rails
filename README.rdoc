@@ -1,28 +1,14 @@
-== README
+== ETERNZ
+A Spree commerce based storefront solution for fashion jewelry
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+https://magnum.travis-ci.com/AbDaniel/eternz-rails.svg?token=YqnySes5N8TifRBTquxr&branch=master
 
-Things you may want to cover:
+===Ruby version
+Ruby 2.2.1
 
-* Ruby version
+===Rails version
+Rails 4.2.3
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+===Database creation
+sqlite3 for Dev and Test
+Postgres for Production
