@@ -1,8 +1,5 @@
 == ETERNZ
-A Spree commerce based storefront solution for fashion jewelry
-
-### Status
-[![Build Status](https://travis-ci.org/simkimsia/UtilityBehaviors.png)](https://travis-ci.org/simkimsia/UtilityBehaviors)
+A Spree commerce based storefront solution for fashion jewelry <img src=https://travis-ci.org/simkimsia/UtilityBehaviors.png)](https://travis-ci.org/simkimsia/UtilityBehaviors />
 
 ===Ruby version
 Ruby 2.2.1
