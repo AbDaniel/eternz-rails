@@ -44,6 +44,15 @@ group :development, :test do
   gem 'spring'
 end
 
+gem 'sass'
+group :test, :development do
+  gem "rspec-rails", "~> 2.0"
+  gem "factory_girl_rails", "~> 4.0"
+  gem "capybara"
+  gem "database_cleaner"
+  gem "selenium-webdriver"
+end
+
 gem 'oa-core', '~> 0.3.2'
 gem 'spree', '3.0.2'
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
