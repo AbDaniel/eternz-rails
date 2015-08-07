@@ -48,7 +48,7 @@ gem 'sass'
 gem 'bower-rails'
 gem 'angular-rails-templates'
 group :test, :development do
-  gem 'rspec-rails', '~> 2.0'
+  gem 'rspec-rails'
   gem 'factory_girl_rails', '~> 4.0'
   gem 'capybara'
   gem 'database_cleaner'
