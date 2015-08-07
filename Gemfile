@@ -47,6 +47,8 @@ end
 gem 'sass'
 gem 'bower-rails'
 gem 'angular-rails-templates'
+gem 'paperclip'
+
 group :test, :development do
   gem 'rspec-rails'
   gem 'factory_girl_rails', '~> 4.0'
