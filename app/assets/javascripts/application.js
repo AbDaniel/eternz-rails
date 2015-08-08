@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require angular/angular
 //= require angular-route/angular-route
+//= require angular-ui-router/angular-ui-router
 //= require angular-rails-templates
 //= require_tree .
 //= require_tree ../templates
