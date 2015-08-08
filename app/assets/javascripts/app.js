@@ -1,18 +1,18 @@
  var eternzApp = angular.module('eternzApp', ['templates', 'ui.router', 'ngMaterial']);
  eternzApp.config(function($stateProvider, $urlRouterProvider, $mdThemingProvider) {
-       $urlRouterProvider.otherwise("/");
-       $stateProvider
-         .state('index', {
-             url: '/',
-             templateUrl: "home.html",
-             views: {
-               'header': {
-                 templateUrl: 'header.html'
-               },
-               'footer': {
-                 templateUrl: 'footer.html'
-               },
-               controller: "CommonController"
-             }); $mdThemingProvider.theme('default')
-           .dark();
-         });
+   $urlRouterProvider.otherwise("index");
+   $stateProvider
+     .state('index', {
+       url: '/',
+       views : {
+         "": {
+           templateUrl: 'home.html'
+         },
+         "header@index" : {
+           templateUrl: 'header.html'
+         }
+       }
+     });
+   $mdThemingProvider.theme('default')
+     .dark();
+ });
