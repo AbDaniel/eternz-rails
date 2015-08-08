@@ -5,14 +5,7 @@
          .state('index', {
              url: '/',
              templateUrl: "home.html",
-             views: {
-               'header': {
-                 templateUrl: 'header.html'
-               },
-               'footer': {
-                 templateUrl: 'footer.html'
-               },
-               controller: "CommonController"
-             }); $mdThemingProvider.theme('default')
-           .dark();
+             controller: "CommonController"
+          }); 
+          $mdThemingProvider.theme('default').dark();
          });
