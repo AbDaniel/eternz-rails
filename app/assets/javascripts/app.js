@@ -10,6 +10,9 @@
              },
             'header@index':{ 
                 templateUrl: 'header.html' 
+             },
+             'content@index':{ 
+                templateUrl: 'content.html' 
              }, 
             'footer@index': { 
                 templateUrl: 'footer.html'
