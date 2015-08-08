@@ -4,8 +4,17 @@
        $stateProvider
          .state('index', {
              url: '/',
-             templateUrl: "home.html",
-             controller: "CommonController"
+             views: {
+            '': { 
+              templateUrl: 'home.html' 
+             },
+            'header@index':{ 
+                templateUrl: 'header.html' 
+             }, 
+            'footer@index': { 
+                templateUrl: 'footer.html'
+            }
+        }
           }); 
           $mdThemingProvider.theme('default').dark();
          });
