@@ -11,6 +11,10 @@ receta.config(['$routeProvider',
       templateUrl: "index.html"
       controller: 'RecipesController'
     )
+    .when('/home',
+      templateUrl: "home.html"
+      controller: 'HomeController'
+    )
 ])
 
 controllers = angular.module('controllers', [])
