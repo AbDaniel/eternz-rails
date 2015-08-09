@@ -4,6 +4,7 @@
     "angular": "latest",
     "bootstrap-sass-official": "latest",
     "angular-ui-router": "latest",
-    "angular-material": "latest"
+    "angular-material": "latest",
+    "ionicons": "latest"
   }
 }
