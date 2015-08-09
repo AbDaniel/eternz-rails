@@ -1,16 +1,16 @@
 .eternz-main-container {
   min-width: 1024px;
 }
-
 .eternz-disp-none {
   display: none;
 }
 
+/* Eternz Menu Module start*/
+
 .eternz-main-menu {
-  border-bottom : 2px solid #c49e32;
+  border-bottom: 2px solid #c49e32;
   position: relative;
 }
-
 .eternz-sub-menu {
   position: absolute;
   background-color: #ECF0F1;
@@ -21,49 +21,103 @@
   right: 0;
   margin: 0 auto;
 }
-
-.eternz-menu:hover .eternz-sub-menu{
+.eternz-menu:hover .eternz-sub-menu {
   display: inline-block;
   z-index: 1;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-
 .eternz-sub-menu-content ul {
   list-style: none;
   padding: 5px 5px;
 }
-
 .eternz-sub-menu-content ul li {
   padding: 5px 5px;
   border-bottom: 1px dotted black;
 }
-
-.eternz-sub-menu-content ul li .text-left{
+.eternz-sub-menu-content ul li .text-left {
   text-align: left;
 }
-
-.eternz-sub-menu-content ul li .text-right{
+.eternz-sub-menu-content ul li .text-right {
   text-align: right;
 }
-
 .eternz-sub-menu-content ul li:hover {
   background-color: black;
   color: white;
   opacity: 0.3;
 }
 
+/* Eternz Menu Module end*/
+
+.eternz-type {
+  height: 180px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  overflow: hidden;
+  border: 3px solid #fff;
+}
+.eternz-type:hover .caption {
+  filter: alpha(opacity=100);
+	opacity: 1;
+	top: 0;
+}
+.caption {
+  filter: alpha(opacity=0);
+	opacity: 0;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 250px;
+  text-align: center;
+  padding-top: 40px;
+	background: rgba(0,0,0,.5);
+	color: #fff;
+	-webkit-transition: all .9s ease;
+	-moz-transition: all .9s ease;
+	-o-transition: all .9s ease;
+	-ms-transition: all .9s ease;
+	transition: all .9s ease;
+	-webkit-transition-delay: .5s;
+	-moz-transition-delay: .5s;
+	-o-transition-delay: .5s;
+	-ms-transition-delay: .5s;
+	transition-delay: .5s;
+}
+.caption span {
+	color: #f3b204;
+	margin: 0 auto;
+	position: relative;
+	-webkit-transition: all .9s ease;
+	-moz-transition: all .9s ease;
+	-o-transition: all .9s ease;
+	-ms-transition: all .9s ease;
+	transition: all .9s ease;
+}
+.caption p {
+	position: relative;
+	-webkit-transition: all .9s ease;
+	-moz-transition: all .9s ease;
+	-o-transition: all .9s ease;
+	-ms-transition: all .9s ease;
+	transition: all .9s ease;
+}
+.eternz-type:hover h3, .eternz-type:hover p {
+  left: 0;
+}
+
 /*start Global Padding patterns*/
+
 .eternz-padding-5 {
   padding: 5px 5px 5px 5px;
 }
-
 .eternz-padding-10 {
   padding: 10px 10px 10px 10px;
 }
 .eternz-padding-15 {
   padding: 15px 15px 15px 15px;
 }
+
 /*end Global Padding patterns*/
 
 .eternz-clearfix {
