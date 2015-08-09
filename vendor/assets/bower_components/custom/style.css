@@ -49,6 +49,9 @@
 
 /* Eternz Menu Module end*/
 
+
+/* Type module start */
+
 .eternz-type {
   height: 180px;
   position: relative;
@@ -59,52 +62,55 @@
 }
 .eternz-type:hover .caption {
   filter: alpha(opacity=100);
-	opacity: 1;
-	top: 0;
+  opacity: 1;
+  top: 0;
 }
 .caption {
   filter: alpha(opacity=0);
-	opacity: 0;
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	top: 250px;
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 250px;
   text-align: center;
   padding-top: 40px;
-	background: rgba(0,0,0,.5);
-	color: #fff;
-	-webkit-transition: all .9s ease;
-	-moz-transition: all .9s ease;
-	-o-transition: all .9s ease;
-	-ms-transition: all .9s ease;
-	transition: all .9s ease;
-	-webkit-transition-delay: .5s;
-	-moz-transition-delay: .5s;
-	-o-transition-delay: .5s;
-	-ms-transition-delay: .5s;
-	transition-delay: .5s;
+  background: rgba(0, 0, 0, .5);
+  color: #fff;
+  -webkit-transition: all .9s ease;
+  -moz-transition: all .9s ease;
+  -o-transition: all .9s ease;
+  -ms-transition: all .9s ease;
+  transition: all .9s ease;
+  -webkit-transition-delay: .5s;
+  -moz-transition-delay: .5s;
+  -o-transition-delay: .5s;
+  -ms-transition-delay: .5s;
+  transition-delay: .5s;
 }
 .caption span {
-	color: #f3b204;
-	margin: 0 auto;
-	position: relative;
-	-webkit-transition: all .9s ease;
-	-moz-transition: all .9s ease;
-	-o-transition: all .9s ease;
-	-ms-transition: all .9s ease;
-	transition: all .9s ease;
+  color: #f3b204;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all .9s ease;
+  -moz-transition: all .9s ease;
+  -o-transition: all .9s ease;
+  -ms-transition: all .9s ease;
+  transition: all .9s ease;
 }
 .caption p {
-	position: relative;
-	-webkit-transition: all .9s ease;
-	-moz-transition: all .9s ease;
-	-o-transition: all .9s ease;
-	-ms-transition: all .9s ease;
-	transition: all .9s ease;
+  position: relative;
+  -webkit-transition: all .9s ease;
+  -moz-transition: all .9s ease;
+  -o-transition: all .9s ease;
+  -ms-transition: all .9s ease;
+  transition: all .9s ease;
 }
 .eternz-type:hover h3, .eternz-type:hover p {
   left: 0;
 }
+
+/* Type module end */
+
 
 /*start Global Padding patterns*/
 
@@ -123,3 +129,36 @@
 .eternz-clearfix {
   clear: both;
 }
+
+/*Footer module start*/
+
+.eternz-footer {
+  color: white;
+  background-color: #000;
+  border-top: 2px solid #c49e32;
+}
+.eternz-footer .text-right {
+  text-align: right;
+}
+.eternz-footer-widget {
+  background-color: #DADFE1;
+}
+.eternz-footer-widget .eternz-footer-sitemap ul{
+  padding-left: 0px;
+  list-style: none;
+}
+.eternz-footer-widget .eternz-footer-sitemap ul li{
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.eternz-footer-widget .eternz-footer-social .space-bt{
+  padding-right: 10px;
+}
+.eternz-footer-widget .eternz-footer-about .text-justify{
+  text-align: justify;
+}
+.eternz-footer-widget .eternz-footer-connect .form-btn{
+  margin-left: 0;
+}
+
+/*Footer module end*/

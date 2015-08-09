@@ -1,13 +1,11 @@
 <md-content>
   <div layout="row">
     <div carousel-start class="carousel slide" data-ride="carousel" flex id="carousel-example-generic">
-<!-- Indicators -->
       <ol class="carousel-indicators">
         <li class="active" data-slide-to="0" data-target="#carousel-example-generic"></li>
         <li data-slide-to="1" data-target="#carousel-example-generic"></li>
         <li data-slide-to="2" data-target="#carousel-example-generic"></li>
       </ol>
-<!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
           <img alt="Item 1" src="<%= asset_path 'home/banner.png' %>">
@@ -16,7 +14,6 @@
           <img alt="Item 2" src="<%= asset_path 'home/banner.png' %>">
         </div>
       </div>
-<!-- Controls -->
       <a class="left carousel-control" data-slide="prev" href="#carousel-example-generic" role="button">
         <span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
         <span class="sr-only">Previous</span>
@@ -27,7 +24,7 @@
       </a>
     </div>
   </div>
-  <div class="types" layout-padding layout="row">
+  <div layout-padding layout="row">
     <div flex>
       <md-card class="eternz-type">
         <img alt="Washed Out" ng-src="<%= asset_path 'types/bangle.jpg' %>">
@@ -83,13 +80,13 @@
       </md-card>
     </div>
   </div>
-  <div class="catalog" layout="row">
+  <!-- <div class="catalog" layout="row">
     <h2>Catalog row 1</h2>
   </div>
   <div class="catalog" layout="row">
     <h2>Catalog row 2</h2>
-  </div>
-  <div layout="row">
+  </div> -->
+  <!-- <div layout="row">
     <div flex>
       Featured Collection
     </div>
@@ -105,8 +102,8 @@
     <div flex>
       [flex]
     </div>
-  </div>
-  <div layout="row">
+  </div> -->
+  <!-- <div layout="row">
     <div flex>
       [flex]
     </div>
@@ -122,5 +119,5 @@
     <div flex>
       [flex]
     </div>
-  </div>
+  </div> -->
 </md-content>
