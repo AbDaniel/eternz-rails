@@ -1,21 +1,62 @@
-  <md-toolbar>
-    <div class="md-toolbar-tools">
-      <span><img src="<%= asset_path 'eternz.png' %>" width="100" height="42"/></span>
-      <!-- fill up the space between left and right area -->
-      <span flex></span>
-      <md-button>Account</md-button>
-      <md-button>Login</md-button>
-    </div>
-  </md-toolbar>
-  <md-content layout="row" class="md-warn">
-    <div flex>
-      <div layout="row" layout-align="start center">
-        <div><md-button class="md-primary md-hue-1">Parure</md-button></div>
-        <div><md-button class="md-primary md-hue-1">Tous le temps</md-button></div>
-        <div><md-button class="md-primary md-hue-1">Reve</md-button></div>
-        <div><md-button class="md-primary md-hue-1">Suave</md-button></div>
-        <div><md-button class="md-primary md-hue-1">Haedos</md-button></div>
-        <div><md-button class="md-primary md-hue-1">Valence</md-button></div>
+<md-toolbar>
+  <div class="md-toolbar-tools">
+    <span>Eternz | Adorn &amp; Express</span>
+    <!-- fill up the space between left and right area -->
+    <span flex></span>
+    <md-button>Account</md-button>
+    <md-button>Login</md-button>
+  </div>
+</md-toolbar>
+<div layout="row" layout-align="center center" class="eternz-main-menu">
+  <div class="eternz-menu">
+    <md-button class="md-primary md-hue-1">Parure</md-button>
+    <md-whiteframe class="eternz-sub-menu eternz-disp-none eternz-padding-10 md-whiteframe-z2">
+      <!-- content start block -->
+      <div class="eternz-sub-menu-content">
+        <div layout="row">
+          <div flex="33">
+            <ul>
+              <li layout="row">
+                <span flex>Anklet</span>
+                <span flex></span>
+                <span flex class="text-right">></span>
+              </li>
+              <li layout="row">
+                <span flex>Bracelet</span>
+                <span flex></span>
+                <span flex class="text-right">></span>
+              </li>
+              <li layout="row">
+                <span flex>Bangle</span>
+                <span flex></span>
+                <span flex class="text-right">></span>
+              </li>
+              <li layout="row">
+                <span flex>Bangle</span>
+                <span flex></span>
+                <span flex class="text-right">></span>
+              </li>
+              <li layout="row">
+                <span flex>Ring</span>
+                <span flex></span>
+                <span flex class="text-right">></span>
+              </li>
+              <li layout="row">
+                <span flex>Neckpiece</span>
+                <span flex></span>
+                <span flex class="text-right">></span>
+              </li>
+              <li layout="row">
+                <span flex>Pendant</span>
+                <span flex></span>
+                <span flex class="text-right">></span>
+              </li>
+            </ul>
+          </div>
+          <div flex="55" class="eternz-padding-10">
+            Parure
+          </div>
+        </div>
       </div>
       <!-- content end block -->
     </md-whiteframe>
