@@ -1,0 +1,71 @@
+<md-content>
+  <div layout="column">
+    <div class="eternz-footer-widget" layout="row">
+      <div class="md-padding eternz-footer-sitemap" flex>
+        <p>
+          <strong>Sitemap</strong>
+        </p>
+        <ul>
+          <li>
+            <a href="">Shipping &amp; returns</a>
+          </li>
+          <li>
+            <a href="">Terms &amp; conditions</a>
+          </li>
+          <li>
+            <a href="">Privacy policy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="md-padding eternz-footer-social" flex="20">
+        <p>
+          <strong>Get connected</strong>
+        </p>
+        <div layout-align="start center" layout="row">
+          <div class="space-bt">
+            <img alt="Item 1" height="30" src="<%= asset_path 'social/fb.png' %>" width="30">
+          </div>
+          <div class="space-bt">
+            <img alt="Item 1" height="30" src="<%= asset_path 'social/google.png' %>" width="30">
+          </div>
+          <div class="space-bt">
+            <img alt="Item 1" height="30" src="<%= asset_path 'social/twitter.png' %>" width="30">
+          </div>
+        </div>
+      </div>
+      <div class="md-padding eternz-footer-about" flex>
+        <p>
+          <strong>Why Eternz ?</strong>
+        </p>
+        <div class="text-justify">
+          <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+        </div>
+      </div>
+      <div class="md-padding eternz-footer-connect" flex>
+        <p>
+          <strong>Stay in touch</strong>
+        </p>
+        <div>
+          <input class="form-control" ng-model="user.firstName" placeholder="Email address" type="text">
+        </div>
+				<div>
+           <md-button class="md-raised md-primary form-btn">Subscribe</md-button>
+        </div>
+      </div>
+    </div>
+    <div class="eternz-footer" layout-fill layout-padding layout="row">
+      <div class="md-body-1" flex>
+        <span>
+          <small>&copy; 2015 Eternz | Crafted with &hearts; in India.</small>
+        </span>
+      </div>
+      <div flex></div>
+      <div class="md-body-1 text-right" flex>
+        <small flex>
+          <a>Privacy policy</a>&nbsp;
+          <a>Terms & conditions</a>
+        </small>
+      </div>
+    </div>
+  </div>
+</md-content>
