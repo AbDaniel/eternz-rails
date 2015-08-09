@@ -1,5 +1,5 @@
  var eternzApp = angular.module('eternzApp', ['templates', 'ui.router', 'ngMaterial']);
- eternzApp.config(function($stateProvider, $urlRouterProvider, $mdThemingProvider) {
+ eternzApp.config(['$stateProvider', '$urlRouterProvider', '$mdThemingProvider', function($stateProvider, $urlRouterProvider, $mdThemingProvider) {
    $urlRouterProvider.otherwise("/");
    $stateProvider
      .state('index', {
@@ -22,4 +22,4 @@
    $mdThemingProvider.theme('default')
      .primaryPalette('pink')
      .accentPalette('orange');
- });
+ }]);
