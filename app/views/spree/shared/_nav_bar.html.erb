@@ -1,0 +1,17 @@
+<nav class="grey darken-4" role="navigation">
+  <div class="nav-wrapper container">
+    <a class="brand-logo yellow-text text-accent-3" href="#" id="logo-container">Logo</a>
+    <ul class="right hide-on-med-and-down yellow-text text-accent-3" data-hook>
+      <li data-hook>
+        <%= render :partial => 'spree/shared/login_bar' %>
+      </li>
+      <li id="link-to-cart" data-hook>
+        <noscript>
+          <%= link_to Spree.t(:cart), '/cart' %>
+        </noscript>
+        &nbsp;
+      </li>
+    </ul>
+    <script>Spree.fetch_cart()</script>
+  </div>
+</nav>
