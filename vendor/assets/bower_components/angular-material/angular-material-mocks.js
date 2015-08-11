@@ -12,66 +12,70 @@
  *  - Captures flush exceptions from $$rAF
  *
  */
-(function(window, angular, undefined) {
+(function (window, angular, undefined) {
 
-'use strict';
-
-/**
- * @ngdoc module
- * @name ngMaterial-mock
- * @packageName angular-material-mocks
- *
- * @description
- *
- * The `ngMaterial-mock` module provides support
- *
- */
-angular.module('ngMaterial-mock', ['ngMock', 'material.core'])
-       .config(['$provide', function($provide) {
+    'use strict';
 
     /**
-      * Angular Material dynamically generates Style tags
-      * based on themes and palletes; for each ng-app.
-      *
-      * For testing, we want to disable generation and
-      * <style> DOM injections. So we clear the huge THEME
-      * styles while testing...
-      */
-     $provide.constant('$MD_THEME_CSS', '/**/');
-
-    /**
-     * Intercept to make .expectWithText() to be synchronous
+     * @ngdoc module
+     * @name ngMaterial-mock
+     * @packageName angular-material-mocks
+     *
+     * @description
+     *
+     * The `ngMaterial-mock` module provides support
+     *
      */
-    $provide.decorator('$mdAria', function($delegate){
+    angular.module('ngMaterial-mock', ['ngMock', 'material.core'])
+        .config(['$provide', function ($provide) {
 
-      $delegate.expectWithText = function(element, attrName){
-        $delegate.expect(element, attrName, element.text().trim());
-      };
+            /**
+             * Angular Material dynamically generates Style tags
+             * based on themes and palletes; for each ng-app.
+             *
+             * For testing, we want to disable generation and
+             * <style> DOM injections. So we clear the huge THEME
+             * styles while testing...
+             */
+            $provide.constant('$MD_THEME_CSS', '/**/');
 
-      return $delegate;
-    });
+            /**
+             * Intercept to make .expectWithText() to be synchronous
+             */
+            $provide.decorator('$mdAria', function ($delegate) {
 
-    /**
-     * Add throttle() and wrap .flush() to catch `no callbacks present`
-     * errors
-     */
-    $provide.decorator('$$rAF', function throttleInjector($delegate){
+                $delegate.expectWithText = function (element, attrName) {
+                    $delegate.expect(element, attrName, element.text().trim());
+                };
 
-      $delegate.throttle = function(cb) {
-        return function() {
-          cb.apply(this, arguments);
-        };
-      };
+                return $delegate;
+            });
 
-      var ngFlush = $delegate.flush;
-      $delegate.flush = function() {
-          try      { ngFlush();  }
-          catch(e) { ;           }
-      };
+            /**
+             * Add throttle() and wrap .flush() to catch `no callbacks present`
+             * errors
+             */
+            $provide.decorator('$$rAF', function throttleInjector($delegate) {
 
-      return $delegate;
-    });
+                $delegate.throttle = function (cb) {
+                    return function () {
+                        cb.apply(this, arguments);
+                    };
+                };
 
-  }]);
+                var ngFlush = $delegate.flush;
+                $delegate.flush = function () {
+                    try {
+                        ngFlush();
+                    }
+                    catch (e) {
+                        ;
+                    }
+                };
+
+                return $delegate;
+            });
+
+        }]);
 
 })(window, window.angular);

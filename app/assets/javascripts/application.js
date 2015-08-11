@@ -19,5 +19,6 @@
 //= require angular-animate/angular-animate
 //= require angular-material/angular-material
 //= require angular-rails-templates
+//= require materialize-sprockets
 //= require_tree .
 //= require_tree ../templates
