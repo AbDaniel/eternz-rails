@@ -1,13 +1,18 @@
-<nav>
-  <div class="nav-wrapper">
-    <a href="#" class="brand-logo">Logo</a>
-    <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><a href="sass.html">Sass</a></li>
-      <li><a href="badges.html">Components</a></li>
-      <li><a href="collapsible.html">JavaScript</a></li>
-    </ul>
-  </div>
-</nav>
+<div id="spree-header">
+  <nav>
+    <div class="nav-wrapper">
+      <figure id="logo" class="col-md-4" data-hook>
+        <%= logo %>
+      </figure>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <%= render :partial => 'spree/shared/login_bar' %>
+      </ul>
+    </div>
+  </nav>
+  <nav>
+    <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>    
+  </nav>
+</div>
 <div id="spree-header">
   <header id="header" data-hook>
     <div class="container">
