@@ -28,7 +28,8 @@
           </div>
         <% else %>
             <%= render partial: 'spree/shared/home_banner' %>
-          <!-- Banner and feature code goes here -->
+            <%= render partial: 'spree/shared/home_featured' %>
+          <!-- Banner and feature goes here -->
         <% end %>
         <%= yield :templates %>
       </div>
