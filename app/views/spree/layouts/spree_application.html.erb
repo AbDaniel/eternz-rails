@@ -3,30 +3,32 @@
 <!--[if IE 7 ]>    <html class="ie ie7" lang="<%= I18n.locale %>"> <![endif]-->
 <!--[if IE 8 ]>    <html class="ie ie8" lang="<%= I18n.locale %>"> <![endif]-->
 <!--[if IE 9 ]>    <html class="ie ie9" lang="<%= I18n.locale %>"> <![endif]-->
-<!--[if gt IE 9]><!-->
-<html lang="<%= I18n.locale %>">
-<!--<![endif]-->
-
-<head data-hook="inside_head">
-  <%= render partial: 'spree/shared/head' %>
-</head>
-
-<body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
-  <%= render partial: 'spree/shared/google_analytics.js' %>
+<!--[if gt IE 9]><!--><html lang="<%= I18n.locale %>"><!--<![endif]-->
+  <head data-hook="inside_head">
+    <%= render partial: 'spree/shared/head' %>
+  </head>
+  <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
+    <%= render partial: 'spree/shared/google_analytics.js' %>
     <%= render partial: 'spree/shared/header' %>
 
-      <div>
-        <div class="row" data-hook>
+    <div>
+      <div class="row" data-hook>
+        <div class="padding-left-10 padding-right-10">
           <%= breadcrumbs(@taxon) %>
-
-              <div data-hook>
-                <%= flash_messages %>
-                  <%= yield %>
-              </div>
-
-              <%= yield :templates %>
         </div>
+        <% if "spree/home" != params[:controller] %>
+          <%= render partial: 'spree/shared/sidebar' if content_for? :sidebar %>
+          <div id="content" class="<%= !content_for?(:sidebar) ? "col l12" : "col l9" %>" data-hook>
+            <div class="padding-top-10">
+              <div class="eternz-product-list">
+                <%= flash_messages %>
+                <%= yield %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+        <%= yield :templates %>
       </div>
-</body>
-
+    </div>
+  </body>
 </html>
