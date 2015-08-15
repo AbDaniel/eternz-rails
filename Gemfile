@@ -73,3 +73,6 @@ gem 'spree_social', github: 'spree-contrib/spree_social', branch: '3-0-stable'
 gem 'materialize-sass'
 gem 'bootstrap-sass'
 gem 'pg', group: :production
+group :development do
+  gem 'xray-rails'
+end
