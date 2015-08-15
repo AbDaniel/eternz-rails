@@ -14,6 +14,7 @@
  *= require_self
  */
 @import "ionicons/css/ionicons";
-@import "bootstrap-sass-official/assets/stylesheets/bootstrap";
+@import "bootstrap-sprockets";
+@import "bootstrap";
 @import "materialize";
 @import "style";

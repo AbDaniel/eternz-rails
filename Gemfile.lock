@@ -448,6 +448,7 @@ PLATFORMS
 DEPENDENCIES
   angular-rails-templates
   aws-sdk-v1
+  bootstrap-sass
   bower-rails
   byebug
   capybara
