@@ -3,7 +3,7 @@
 <div id="taxonomies" data-hook>
   <% @taxonomies.each do |taxonomy| %>
     <% cache [I18n.locale, taxonomy, max_level, @taxon] do %>
-      <h4 class='taxonomy-root'><%= Spree.t(:shop_by_taxonomy, :taxonomy => taxonomy.name) %></h4>
+      <h4 class='taxonomy-root yellow-text text-darken-2'><i class="ion-android-funnel padding-right-10"></i><%= Spree.t(:shop_by_taxonomy, :taxonomy => taxonomy.name) %></h4>
       <%= taxons_tree(taxonomy.root, @taxon, max_level) %>
     <% end %>
   <% end %>
