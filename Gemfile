@@ -71,7 +71,6 @@ gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '3-0-stable'
 gem 'spree_social', github: 'spree-contrib/spree_social', branch: '3-0-stable'
 gem 'materialize-sass'
-gem 'bootstrap-sass'
 gem 'pg', group: :production
 group :development do
   gem 'xray-rails'
