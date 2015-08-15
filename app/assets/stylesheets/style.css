@@ -1,4 +1,4 @@
-/* Common class */
+/* Common class starts */
 .padding-top-5 {
   padding-top: 5px;
 }
@@ -47,7 +47,7 @@
 .margin-bottom-0 {
   margin-bottom: 0px;
 }
-
+/* Common class ends */
 .eternz-product-filter {
   padding: 10px 10px 10px 10px;
 }
@@ -89,8 +89,15 @@
   color: #ccc;
   content: "/\00a0";
 }
-
 .eternz-product-banner img {
   max-width: 100%;
   height: auto;
 }
+/* Slider css starts */
+.carousel-indicators .active{
+    background-color: #c49e32;
+}
+.carousel-indicators li{
+    border: 1px solid #c49e32;
+}
+/* Slider css ends */
