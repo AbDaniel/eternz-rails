@@ -43,8 +43,8 @@ Spree.config do |config|
     attachment_config.each do |key, value|
       Spree::Image.attachment_definitions[:attachment][key.to_sym] = value
     end
-
   end
+  config.max_level_in_taxons_menu = 2
 end
 
 Spree.user_class = 'Spree::User'
