@@ -23,16 +23,21 @@
 
 <% if products.any? %>
   <div id="products" class="row" data-hook>
+    <% if "spree/products" == params[:controller] %>
+    <div class="col s12 eternz-product-banner">
+      <img src="<%= asset_path 'products/product-banner.jpg' %>">
+      <div>
+        <h4 class="flow-text center-align">Jewel Collections</h4>
+      </div>
+    </div>
+    <% end %>
     <% products.each do |product| %>
       <% url = spree.product_url(product, taxon_id: @taxon.try(:id)) %>
       <div id="product_<%= product.id %>" class="col l3" data-hook="products_list_item" itemscope itemtype="https://schema.org/Product">
         <div class="eternz-product-card card">
           <% cache(@taxon.present? ? [I18n.locale, current_currency, @taxon, product] : [I18n.locale, current_currency, product]) do %>
             <div class="card-image">
-              <%= small_image(product, itemprop: "image")%><br/>
-            </div>
-            <div class="card-content">
-              <p><%= link_to truncate(product.name, length: 20), url, itemprop: "name", title: product.name %></p>
+              <%= link_to small_image(product, itemprop: "image"), url, itemprop: 'url'%>
             </div>
             <div class="card-action">
               <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
