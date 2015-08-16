@@ -8,7 +8,7 @@
 <head data-hook="inside_head">
   <%= render partial: 'spree/shared/head' %>
 </head>
-<body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
+<body class="<%= body_class %> eternz-wrapper" id="<%= @body_id || 'default' %>" data-hook="body">
 <%= render partial: 'spree/shared/google_analytics.js' %>
 <%= render partial: 'spree/shared/header' %>
 <div>
@@ -17,7 +17,7 @@
     <% if "spree/home" != params[:controller] %>
         <%= render partial: 'spree/shared/sidebar' if content_for? :sidebar %>
         <div id="content" class="<%= !content_for?(:sidebar) ? "col l12" : "col l9" %> eternz-product-list" data-hook>
-          <div class="padding-top-10">
+          <div class="padding-top-15">
               <%= flash_messages %>
               <%= yield %>
           </div>
