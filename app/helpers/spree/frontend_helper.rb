@@ -17,7 +17,7 @@ module Spree
         crumbs << content_tag(:li, content_tag(:span, Spree.t(:products), itemprop: "item"), class: 'active', itemscope: "itemscope", itemtype: "https://schema.org/ListItem", itemprop: "itemListElement")
       end
       crumb_list = content_tag(:ol, raw(crumbs.flatten.map { |li| li.mb_chars }.join), class: 'eternz-breadcrumbs', itemscope: "itemscope", itemtype: "https://schema.org/BreadcrumbList")
-      content_tag(:div, crumb_list, id: 'breadcrumbs', class: 'col l12')
+      content_tag(:div, crumb_list, id: 'breadcrumbs', class: '')
     end
 
     def checkout_progress
