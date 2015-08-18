@@ -98,5 +98,16 @@ module Spree
         end
       end
     end
+
+    def nested_taxon_tree(root_taxon, current_taxon, max_level = 1)
+      return '' if max_level < 1 || root_taxon.leaf?
+      content_tag :ul, class: 'tree' do
+        root_taxon.children.map do |taxon|
+          css_class = (current_taxon && current_taxon.self_and_ancestors.include?(taxon)) ? 'category-item active' : 'category-item'
+          content_tag(:li, link_to(taxon.name, seo_url(taxon), class: css_class) + nested_taxon_tree(taxon, current_taxon, max_level - 1).html_safe)
+        end.join("\n").html_safe
+      end
+    end
+
   end
 end
