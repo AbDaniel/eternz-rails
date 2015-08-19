@@ -1,6 +1,6 @@
 <% max_level = Spree::Config[:max_level_in_taxons_menu] || 1 %>
 
-<div id="taxonomies" data-hook>
+<div id="taxonomies" class="eternz-facets" data-hook>
   <% @taxonomies.each do |taxonomy| %>
       <% cache [I18n.locale, taxonomy, max_level, @taxon] do %>
           <h4 class='taxonomy-root yellow-text text-darken-2'>
