@@ -2,15 +2,21 @@
 
 <% cache [I18n.locale, current_currency, @product, @product.possible_promotions] do %>
   <div data-hook="product_show" itemscope itemtype="https://schema.org/Product">
-    <div class="col s5" data-hook="product_left_part">
+    <div class="col l4" data-hook="product_left_part">
       <div data-hook="product_left_part_wrap">
-        <div id="product-images" data-hook="product_images">
-          <div class="card large eternz-product-detail-image" style="height:auto;margin-bottom:20px">
-            <div class="card-image" style="height:auto;">
-              <%= render :partial => 'image' %>
+        <div class="card large">
+          <div id="product-images" data-hook="product_images">
+            <div class="card-image">
+              <div id="main-image" class="panel panel-default" data-hook>
+                <div class="panel-body text-center">
+                  <%= render :partial => 'image' %>
+                </div>
+              </div>
             </div>
-            <div class="card-content" style="height:auto">
-              <%= render :partial => 'thumbnails' %>
+            <div class="card-content">
+              <div id="thumbnails" data-hook>
+                <%= render :partial => 'thumbnails' %>
+              </div>
             </div>
           </div>
         </div>
@@ -25,7 +31,7 @@
       </div>
     </div>
 
-    <div class="col s7" data-hook="product_right_part">
+    <div class="col l8" data-hook="product_right_part">
       <div data-hook="product_right_part_wrap">
         <div id="product-description" data-hook="product_description">
           <h4 class="product-title margin-top-0" itemprop="name"><%= @product.name %></h4>
