@@ -34,7 +34,7 @@
     <div class="col l8" data-hook="product_right_part">
       <div data-hook="product_right_part_wrap">
         <div id="product-description" data-hook="product_description">
-          <h4 class="product-title margin-top-0" itemprop="name"><%= @product.name %></h4>
+          <h5 class="product-title margin-top-5" itemprop="name"><%= @product.name %></h5>
 
           <div class="well" itemprop="description" data-hook="description">
             <%= product_description(@product) rescue Spree.t(:product_has_no_description) %>
