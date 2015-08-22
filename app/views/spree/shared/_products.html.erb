@@ -22,7 +22,7 @@
 </div>
 
 <% if products.any? %>
-  <div id="products" class="row" data-hook>
+  <div id="products" class="row margin-bottom-0" data-hook>
     <% if "spree/products" == params[:controller] %>
     <div class="col s12 eternz-product-banner">
       <img src="<%= asset_path 'products/product-banner.jpg' %>">
@@ -52,7 +52,7 @@
   </div>
 <% end %>
 
-<div class="eternz-product-pagination">
+<div class="row eternz-product-pagination">
   <% if paginated_products.respond_to?(:num_pages) %>
     <%= paginate paginated_products, theme: 'twitter-bootstrap-3' %>
   <% end %>

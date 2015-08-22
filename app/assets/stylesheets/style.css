@@ -78,6 +78,9 @@
   padding: 20px 20px 20px 20px;
   clear: both;
 }
+.eternz-product-pagination > ul > .active {
+  background-color: #fbc02d;
+}
 .eternz-breadcrumbs {
   padding: 8px 15px;
   margin: 0px;
