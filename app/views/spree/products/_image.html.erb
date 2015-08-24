@@ -1,0 +1,12 @@
+<% if defined?(image) && image %>
+<%= image_tag image.attachment.url(:product), :itemprop => "image", :id => "zoom_07" %>
+<% else %>
+<%= product_image(@product, :itemprop => "image", :id => "zoom_07") %>
+<% end %>
+<script type="text/javascript">
+$("#zoom_07").elevateZoom({
+  zoomType: "lens",
+  lensShape: "round",
+  lensSize: 200
+});
+</script>
