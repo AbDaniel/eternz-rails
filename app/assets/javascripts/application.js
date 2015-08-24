@@ -12,5 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require elevatezoom/jquery.elevatezoom
 //= require materialize-sprockets
 //= require_tree .
