@@ -17,7 +17,7 @@
     <% if "spree/home" != params[:controller] %>
         <%= render partial: 'spree/shared/sidebar' if content_for? :sidebar %>
         <div id="content" class="<%= !content_for?(:sidebar) ? "col l12" : "col l9" %> eternz-product-list" data-hook>
-          <div class="padding-top-15">
+          <div class="padding-top-20">
             <div class="col l12">
               <%= flash_messages %>
             </div>
